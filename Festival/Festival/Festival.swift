@@ -17,13 +17,12 @@ class Festival {
     /// 获取节日
     /// - Parameter date: 日期对象
     public static func festival(date: Date) -> [String] {
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.weekday, .weekdayOrdinal, .day, .month, .year], from: date)
+        let components = Calendar.current.dateComponents([.weekday, .weekdayOrdinal, .day, .month, .year], from: date)
         guard let year = components.year,
             let month = components.month,
             let day = components.day else { return [String]() }
 
-        var allFestival: [String] = [String]()
+        var allFestivals: [String] = [String]()
                 
         // ①阴历节日
         let solor = Solar(solarYear: year, solarMonth: month, solarDay: day)
@@ -31,24 +30,24 @@ class Festival {
         let lunarFestivals = lunarFestival(year: lunarDate.lunarYear, month: lunarDate.lunarMonth, day: lunarDate.lunarDay)
 
         if lunarFestivals.count > 0 {
-            allFestival.append(lunarFestivals)
+            allFestivals.append(lunarFestivals)
         } else {
             // 除夕特殊处理
             let festival = dealLunarNewYearsEve(lunarDate: lunarDate, date: date)
             if festival.count > 0 {
-                allFestival.append(festival)
+                allFestivals.append(festival)
             }
         }
 
         // ②阳历节日
         let soloarFestivals = soloarFestival(year: year, month: month, day: day)
         if soloarFestivals.count > 0 {
-            allFestival.append(soloarFestivals)
+            allFestivals.append(soloarFestivals)
         } else {
             // 处理父亲节和母亲节
             let festival = dealMothersDayAndFathersDay(month: month, components: components)
             if festival.count > 0 {
-                allFestival.append(festival)
+                allFestivals.append(festival)
             }
         }
         
@@ -57,7 +56,7 @@ class Festival {
 //            allFestival.append(customFes)
 //        }
 
-        return allFestival
+        return allFestivals
     }
 }
 
@@ -126,15 +125,17 @@ extension Festival {
     /// 处理父亲节和母亲节
     static func dealMothersDayAndFathersDay(month: Int, components: DateComponents) -> String {
         var festival = ""
-        if 5 == month {
-            if (components.weekday == 1 && components.weekdayOrdinal == 2) {
-                festival = FesEnum.Solar.monthersDay.rawValue
-            }
+        if month == 5,
+            components.weekdayOrdinal == 2,
+            components.weekday == 1 {
+            // 5月的第二个星期日（美国）
+            festival = FesEnum.Solar.monthersDay.rawValue
         }
-        if 6 == month {
-            if (components.weekday == 1 && components.weekdayOrdinal == 3) {
-                festival = FesEnum.Solar.fathersDay.rawValue
-            }
+        if month == 6,
+            components.weekdayOrdinal == 3,
+            components.weekday == 1 {
+            // 6月的第3个星期日（美国）
+            festival = FesEnum.Solar.fathersDay.rawValue
         }
         
         return festival
