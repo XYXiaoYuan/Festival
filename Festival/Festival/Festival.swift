@@ -19,11 +19,10 @@ class Festival {
     public static func festival(date: Date) -> [String] {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.weekday, .weekdayOrdinal, .day, .month, .year], from: date)
-        let year: Int = components.year!
-        let month: Int = components.month!
-        let day: Int = components.day!
+        guard let year = components.year,
+            let month = components.month,
+            let day = components.day else { return [String]() }
 
-        
         var allFestival: [String] = [String]()
                 
         // ①阴历节日
