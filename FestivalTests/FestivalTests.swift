@@ -23,6 +23,8 @@ class FestivalTests: XCTestCase {
         soloar.testFathersDay()
         
         LunarFestival().testLunarFestival()
+        
+        testFesEnum()
     }
     
     func testPerformanceExample() {
@@ -40,6 +42,14 @@ class FestivalTests: XCTestCase {
         print(str)
     }
     
+    
+    func testFesEnum() {
+        let lunars = FesEnum.Lunar.allValues
+        let solars = FesEnum.Solar.allValues
+        print(lunars)
+        print(solars)
+        print(lunars + solars)
+    }
     
 }
 

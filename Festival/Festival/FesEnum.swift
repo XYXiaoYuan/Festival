@@ -12,7 +12,7 @@ import Foundation
 enum FesEnum {
     
     /// 阴历节日
-    enum Lunar: String {
+    enum Lunar: String, CaseIterable {
         case chineseNewYear = "除夕"
         case newYearsEve    = "春节"
         case qingming       = "清明节"
@@ -22,7 +22,7 @@ enum FesEnum {
     }
     
     /// 阳历节日
-    enum Solar: String {
+    enum Solar: String, CaseIterable {
         case newYearsDay    = "元旦"
         case womensDay      = "妇女节"
         case labourDay      = "劳动节"
@@ -30,6 +30,13 @@ enum FesEnum {
         case childrensDay   = "儿童节"
         case fathersDay     = "父亲节"
         case nationalDay    = "国庆节"
+    }
+}
+
+extension CaseIterable where Self: RawRepresentable {
+
+    static var allValues: [RawValue] {
+        return allCases.map { $0.rawValue }
     }
 }
 
