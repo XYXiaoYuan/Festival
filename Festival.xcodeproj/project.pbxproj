@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A70803FD236A7AEA00E059A0 /* FesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70803FC236A7AEA00E059A0 /* FesEnum.swift */; };
+		A72EC1A62357FE35000B8E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EC1A52357FE35000B8E86 /* AppDelegate.swift */; };
+		A72EC1A82357FE35000B8E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EC1A72357FE35000B8E86 /* SceneDelegate.swift */; };
+		A72EC1AA2357FE35000B8E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EC1A92357FE35000B8E86 /* ContentView.swift */; };
+		A72EC1AC2357FE36000B8E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72EC1AB2357FE36000B8E86 /* Assets.xcassets */; };
+		A72EC1AF2357FE36000B8E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72EC1AE2357FE36000B8E86 /* Preview Assets.xcassets */; };
+		A72EC1B22357FE36000B8E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72EC1B02357FE36000B8E86 /* LaunchScreen.storyboard */; };
+		A72EC1BD2357FE36000B8E86 /* FestivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EC1BC2357FE36000B8E86 /* FestivalTests.swift */; };
+		A72EC1D82357FE5B000B8E86 /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EC1D52357FE5B000B8E86 /* Festival.swift */; };
+		A72EC1DA2357FE5B000B8E86 /* Solarterms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EC1D72357FE5B000B8E86 /* Solarterms.swift */; };
+		A72EC1E223584CE9000B8E86 /* LunarSolarConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EC1E123584CE9000B8E86 /* LunarSolarConverter.swift */; };
+		A7622E8623585A1300D10508 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E8423585A1300D10508 /* Date-Extension.swift */; };
+		A7622E8A23585ABC00D10508 /* SoloarFestival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E8923585ABC00D10508 /* SoloarFestival.swift */; };
+		A7622E8D23585BBC00D10508 /* LunarFestival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E8C23585BBC00D10508 /* LunarFestival.swift */; };
+		A7622E9023585C3000D10508 /* MidAutumnFestival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E8F23585C3000D10508 /* MidAutumnFestival.swift */; };
+		A7622E9623585FB000D10508 /* QingmingFestival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E9523585FB000D10508 /* QingmingFestival.swift */; };
+		A7622E982358600000D10508 /* LunarNewYearsEve.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E972358600000D10508 /* LunarNewYearsEve.swift */; };
+		A7622E9A2358602000D10508 /* SpringFestival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E992358602000D10508 /* SpringFestival.swift */; };
+		A7622E9C23587D8A00D10508 /* DragonBoatFestival.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E9B23587D8A00D10508 /* DragonBoatFestival.swift */; };
+		A7622E9E235889A500D10508 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E8423585A1300D10508 /* Date-Extension.swift */; };
+		A7622EA02358924200D10508 /* MothersDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E9F2358924200D10508 /* MothersDay.swift */; };
+		A7622EA22358925300D10508 /* FathersDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622EA12358925300D10508 /* FathersDay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A72EC1B92357FE36000B8E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A72EC19A2357FE35000B8E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A72EC1A12357FE35000B8E86;
+			remoteInfo = Festival;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A70803FC236A7AEA00E059A0 /* FesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FesEnum.swift; sourceTree = "<group>"; };
+		A72EC1A22357FE35000B8E86 /* Festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Festival.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72EC1A52357FE35000B8E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A72EC1A72357FE35000B8E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A72EC1A92357FE35000B8E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A72EC1AB2357FE36000B8E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A72EC1AE2357FE36000B8E86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A72EC1B12357FE36000B8E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A72EC1B32357FE36000B8E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72EC1B82357FE36000B8E86 /* FestivalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72EC1BC2357FE36000B8E86 /* FestivalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalTests.swift; sourceTree = "<group>"; };
+		A72EC1BE2357FE36000B8E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72EC1D52357FE5B000B8E86 /* Festival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
+		A72EC1D72357FE5B000B8E86 /* Solarterms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solarterms.swift; sourceTree = "<group>"; };
+		A72EC1E123584CE9000B8E86 /* LunarSolarConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSolarConverter.swift; sourceTree = "<group>"; };
+		A7622E8423585A1300D10508 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		A7622E8923585ABC00D10508 /* SoloarFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloarFestival.swift; sourceTree = "<group>"; };
+		A7622E8C23585BBC00D10508 /* LunarFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarFestival.swift; sourceTree = "<group>"; };
+		A7622E8F23585C3000D10508 /* MidAutumnFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidAutumnFestival.swift; sourceTree = "<group>"; };
+		A7622E9523585FB000D10508 /* QingmingFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QingmingFestival.swift; sourceTree = "<group>"; };
+		A7622E972358600000D10508 /* LunarNewYearsEve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarNewYearsEve.swift; sourceTree = "<group>"; };
+		A7622E992358602000D10508 /* SpringFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringFestival.swift; sourceTree = "<group>"; };
+		A7622E9B23587D8A00D10508 /* DragonBoatFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBoatFestival.swift; sourceTree = "<group>"; };
+		A7622E9F2358924200D10508 /* MothersDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothersDay.swift; sourceTree = "<group>"; };
+		A7622EA12358925300D10508 /* FathersDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FathersDay.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A72EC19F2357FE35000B8E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72EC1B52357FE36000B8E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A72EC1992357FE35000B8E86 = {
+			isa = PBXGroup;
+			children = (
+				A72EC1A42357FE35000B8E86 /* Festival */,
+				A72EC1BB2357FE36000B8E86 /* FestivalTests */,
+				A72EC1A32357FE35000B8E86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A72EC1A32357FE35000B8E86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72EC1A22357FE35000B8E86 /* Festival.app */,
+				A72EC1B82357FE36000B8E86 /* FestivalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A72EC1A42357FE35000B8E86 /* Festival */ = {
+			isa = PBXGroup;
+			children = (
+				A72EC1A52357FE35000B8E86 /* AppDelegate.swift */,
+				A72EC1A72357FE35000B8E86 /* SceneDelegate.swift */,
+				A72EC1A92357FE35000B8E86 /* ContentView.swift */,
+				A7622E9D235883D000D10508 /* Festival */,
+				A72EC1AB2357FE36000B8E86 /* Assets.xcassets */,
+				A72EC1B02357FE36000B8E86 /* LaunchScreen.storyboard */,
+				A72EC1B32357FE36000B8E86 /* Info.plist */,
+				A72EC1AD2357FE36000B8E86 /* Preview Content */,
+			);
+			path = Festival;
+			sourceTree = "<group>";
+		};
+		A72EC1AD2357FE36000B8E86 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A72EC1AE2357FE36000B8E86 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A72EC1BB2357FE36000B8E86 /* FestivalTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7622E8423585A1300D10508 /* Date-Extension.swift */,
+				A72EC1BC2357FE36000B8E86 /* FestivalTests.swift */,
+				A7622E8923585ABC00D10508 /* SoloarFestival.swift */,
+				A7622E9F2358924200D10508 /* MothersDay.swift */,
+				A7622EA12358925300D10508 /* FathersDay.swift */,
+				A7622E8C23585BBC00D10508 /* LunarFestival.swift */,
+				A7622E8E23585C1100D10508 /* LunarFestivalTest */,
+				A72EC1BE2357FE36000B8E86 /* Info.plist */,
+			);
+			path = FestivalTests;
+			sourceTree = "<group>";
+		};
+		A7622E8E23585C1100D10508 /* LunarFestivalTest */ = {
+			isa = PBXGroup;
+			children = (
+				A7622E972358600000D10508 /* LunarNewYearsEve.swift */,
+				A7622E992358602000D10508 /* SpringFestival.swift */,
+				A7622E9523585FB000D10508 /* QingmingFestival.swift */,
+				A7622E9B23587D8A00D10508 /* DragonBoatFestival.swift */,
+				A7622E8F23585C3000D10508 /* MidAutumnFestival.swift */,
+			);
+			path = LunarFestivalTest;
+			sourceTree = "<group>";
+		};
+		A7622E9D235883D000D10508 /* Festival */ = {
+			isa = PBXGroup;
+			children = (
+				A72EC1D52357FE5B000B8E86 /* Festival.swift */,
+				A72EC1D72357FE5B000B8E86 /* Solarterms.swift */,
+				A72EC1E123584CE9000B8E86 /* LunarSolarConverter.swift */,
+				A70803FC236A7AEA00E059A0 /* FesEnum.swift */,
+			);
+			path = Festival;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A72EC1A12357FE35000B8E86 /* Festival */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72EC1CC2357FE36000B8E86 /* Build configuration list for PBXNativeTarget "Festival" */;
+			buildPhases = (
+				A72EC19E2357FE35000B8E86 /* Sources */,
+				A72EC19F2357FE35000B8E86 /* Frameworks */,
+				A72EC1A02357FE35000B8E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Festival;
+			productName = Festival;
+			productReference = A72EC1A22357FE35000B8E86 /* Festival.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A72EC1B72357FE36000B8E86 /* FestivalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72EC1CF2357FE36000B8E86 /* Build configuration list for PBXNativeTarget "FestivalTests" */;
+			buildPhases = (
+				A72EC1B42357FE36000B8E86 /* Sources */,
+				A72EC1B52357FE36000B8E86 /* Frameworks */,
+				A72EC1B62357FE36000B8E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72EC1BA2357FE36000B8E86 /* PBXTargetDependency */,
+			);
+			name = FestivalTests;
+			productName = FestivalTests;
+			productReference = A72EC1B82357FE36000B8E86 /* FestivalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A72EC19A2357FE35000B8E86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = MCPhotosiOS;
+				TargetAttributes = {
+					A72EC1A12357FE35000B8E86 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A72EC1B72357FE36000B8E86 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = A72EC1A12357FE35000B8E86;
+					};
+				};
+			};
+			buildConfigurationList = A72EC19D2357FE35000B8E86 /* Build configuration list for PBXProject "Festival" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A72EC1992357FE35000B8E86;
+			productRefGroup = A72EC1A32357FE35000B8E86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A72EC1A12357FE35000B8E86 /* Festival */,
+				A72EC1B72357FE36000B8E86 /* FestivalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A72EC1A02357FE35000B8E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72EC1B22357FE36000B8E86 /* LaunchScreen.storyboard in Resources */,
+				A72EC1AF2357FE36000B8E86 /* Preview Assets.xcassets in Resources */,
+				A72EC1AC2357FE36000B8E86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72EC1B62357FE36000B8E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A72EC19E2357FE35000B8E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7622E9E235889A500D10508 /* Date-Extension.swift in Sources */,
+				A72EC1A62357FE35000B8E86 /* AppDelegate.swift in Sources */,
+				A72EC1DA2357FE5B000B8E86 /* Solarterms.swift in Sources */,
+				A70803FD236A7AEA00E059A0 /* FesEnum.swift in Sources */,
+				A72EC1A82357FE35000B8E86 /* SceneDelegate.swift in Sources */,
+				A72EC1D82357FE5B000B8E86 /* Festival.swift in Sources */,
+				A72EC1AA2357FE35000B8E86 /* ContentView.swift in Sources */,
+				A72EC1E223584CE9000B8E86 /* LunarSolarConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72EC1B42357FE36000B8E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7622E9C23587D8A00D10508 /* DragonBoatFestival.swift in Sources */,
+				A7622EA22358925300D10508 /* FathersDay.swift in Sources */,
+				A7622E9623585FB000D10508 /* QingmingFestival.swift in Sources */,
+				A7622E982358600000D10508 /* LunarNewYearsEve.swift in Sources */,
+				A7622EA02358924200D10508 /* MothersDay.swift in Sources */,
+				A7622E8A23585ABC00D10508 /* SoloarFestival.swift in Sources */,
+				A7622E9023585C3000D10508 /* MidAutumnFestival.swift in Sources */,
+				A7622E9A2358602000D10508 /* SpringFestival.swift in Sources */,
+				A72EC1BD2357FE36000B8E86 /* FestivalTests.swift in Sources */,
+				A7622E8D23585BBC00D10508 /* LunarFestival.swift in Sources */,
+				A7622E8623585A1300D10508 /* Date-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72EC1BA2357FE36000B8E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A72EC1A12357FE35000B8E86 /* Festival */;
+			targetProxy = A72EC1B92357FE36000B8E86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A72EC1B02357FE36000B8E86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72EC1B12357FE36000B8E86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A72EC1CA2357FE36000B8E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A72EC1CB2357FE36000B8E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A72EC1CD2357FE36000B8E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Festival/Preview Content\"";
+				DEVELOPMENT_TEAM = 887GXXL5QL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Festival/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ut.Festival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A72EC1CE2357FE36000B8E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Festival/Preview Content\"";
+				DEVELOPMENT_TEAM = 887GXXL5QL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Festival/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ut.Festival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A72EC1D02357FE36000B8E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887GXXL5QL;
+				INFOPLIST_FILE = FestivalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ut.FestivalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Festival.app/Festival";
+			};
+			name = Debug;
+		};
+		A72EC1D12357FE36000B8E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887GXXL5QL;
+				INFOPLIST_FILE = FestivalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ut.FestivalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Festival.app/Festival";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A72EC19D2357FE35000B8E86 /* Build configuration list for PBXProject "Festival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72EC1CA2357FE36000B8E86 /* Debug */,
+				A72EC1CB2357FE36000B8E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72EC1CC2357FE36000B8E86 /* Build configuration list for PBXNativeTarget "Festival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72EC1CD2357FE36000B8E86 /* Debug */,
+				A72EC1CE2357FE36000B8E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72EC1CF2357FE36000B8E86 /* Build configuration list for PBXNativeTarget "FestivalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72EC1D02357FE36000B8E86 /* Debug */,
+				A72EC1D12357FE36000B8E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A72EC19A2357FE35000B8E86 /* Project object */;
+}
