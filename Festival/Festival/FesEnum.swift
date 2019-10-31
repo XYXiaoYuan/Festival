@@ -13,16 +13,17 @@ enum FesEnum {
     
     /// 阴历节日
     enum Lunar: String {
-        case newYearsDay    = "元旦"
+        case chineseNewYear = "除夕"
         case newYearsEve    = "春节"
         case qingming       = "清明节"
         case dragonBoat     = "端午节"
-        case labourDay      = "七夕节"
+        case qixi           = "七夕节"
         case midAutumn      = "中秋节"
     }
     
     /// 阳历节日
     enum Solar: String {
+        case newYearsDay    = "元旦"
         case womensDay      = "妇女节"
         case labourDay      = "劳动节"
         case monthersDay    = "母亲节"

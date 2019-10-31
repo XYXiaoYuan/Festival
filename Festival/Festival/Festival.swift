@@ -66,11 +66,11 @@ extension Festival {
     static func soloarFestival(year: Int, month: Int, day: Int) -> String {
         var festivalStr: String = ""
         switch festivalIndex(month, day) {
-        case festivalIndex(1, 1): festivalStr = "元旦"
-        case festivalIndex(3, 8): festivalStr = "妇女节"
-        case festivalIndex(5, 1): festivalStr = "劳动节"
-        case festivalIndex(6, 1): festivalStr = "儿童节"
-        case festivalIndex(10, 1)...festivalIndex(10, 7): festivalStr = "国庆节"
+        case festivalIndex(1, 1): festivalStr = FesEnum.Solar.newYearsDay.rawValue
+        case festivalIndex(3, 8): festivalStr = FesEnum.Solar.womensDay.rawValue
+        case festivalIndex(5, 1): festivalStr = FesEnum.Solar.labourDay.rawValue
+        case festivalIndex(6, 1): festivalStr = FesEnum.Solar.childrensDay.rawValue
+        case festivalIndex(10, 1)...festivalIndex(10, 7): festivalStr = FesEnum.Solar.nationalDay.rawValue
         default: festivalStr = ""
         }
         
@@ -80,7 +80,7 @@ extension Festival {
             // 清明节处理
             let solarterm = Solarterms.solartermName(index: Solarterms.solartermIndex(year: year, month: month, day: day))
             if solarterm == "清明" {
-                festivalStr = "清明节"
+                festivalStr = FesEnum.Lunar.qingming.rawValue
             }
             return festivalStr
         }
@@ -90,10 +90,10 @@ extension Festival {
     static func lunarFestival(year: Int, month: Int, day: Int) -> String {
         var festivalStr: String = ""
         switch festivalIndex(month, day) {
-        case festivalIndex(1, 1)...festivalIndex(1, 6): festivalStr = "春节"
-        case festivalIndex(5, 5): festivalStr = "端午节"
-        case festivalIndex(7, 7): festivalStr = "七夕节"
-        case festivalIndex(8, 15): festivalStr = "中秋节"
+        case festivalIndex(1, 1)...festivalIndex(1, 6): festivalStr = FesEnum.Lunar.newYearsEve.rawValue
+        case festivalIndex(5, 5): festivalStr = FesEnum.Lunar.dragonBoat.rawValue
+        case festivalIndex(7, 7): festivalStr = FesEnum.Lunar.qixi.rawValue
+        case festivalIndex(8, 15): festivalStr = FesEnum.Lunar.midAutumn.rawValue
         default: festivalStr = ""
         }
         return festivalStr
@@ -107,12 +107,12 @@ extension Festival {
         var festival = ""
         if 5 == month {
             if (components.weekday == 1 && components.weekdayOrdinal == 2) {
-                festival = "母亲节"
+                festival = FesEnum.Solar.monthersDay.rawValue
             }
         }
         if 6 == month {
             if (components.weekday == 1 && components.weekdayOrdinal == 3) {
-                festival = "父亲节"
+                festival = FesEnum.Solar.fathersDay.rawValue
             }
         }
         
@@ -124,13 +124,13 @@ extension Festival {
         var festival = ""
         if 12 == lunarDate.lunarMonth && (30 == lunarDate.lunarDay || 29 == lunarDate.lunarDay) {
             if 30 == lunarDate.lunarDay {
-                festival = "春节"
+                festival = FesEnum.Lunar.newYearsEve.rawValue // FesEnum.Lunar.chineseNewYear.rawValue
             } else {
                 let timeIntervalDay: TimeInterval = 60 * 60 * 24
                 let nextDayDate = Date(timeInterval: timeIntervalDay, since: date)
                 let lunarComponents = Calendar(identifier: .chinese).dateComponents([.day, .month, .year], from: nextDayDate)
                 if 1 == lunarComponents.month && 1 == lunarComponents.day {
-                    festival = "春节"
+                    festival = FesEnum.Lunar.newYearsEve.rawValue // FesEnum.Lunar.chineseNewYear.rawValue
                 }
             }
         }

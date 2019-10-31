@@ -158,10 +158,10 @@
 		A7622E9D235883D000D10508 /* Festival */ = {
 			isa = PBXGroup;
 			children = (
+				A70803FC236A7AEA00E059A0 /* FesEnum.swift */,
 				A72EC1D52357FE5B000B8E86 /* Festival.swift */,
 				A72EC1D72357FE5B000B8E86 /* Solarterms.swift */,
 				A72EC1E123584CE9000B8E86 /* LunarSolarConverter.swift */,
-				A70803FC236A7AEA00E059A0 /* FesEnum.swift */,
 			);
 			path = Festival;
 			sourceTree = "<group>";
