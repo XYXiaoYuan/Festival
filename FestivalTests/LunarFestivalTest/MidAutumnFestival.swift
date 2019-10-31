@@ -16,9 +16,10 @@ class MidAutumnFestival: XCTestCase {
     func testMidAutumnFestival() {
         
         var dates: [Solar] = [Solar]()
-        for i in 2000...2019 {
+        for i in 1990...2019 {
             let isleap = LunarSolarConverter.isLeapYear(year: i)
             if isleap {
+                // TODO:闰年的 阴历转阳历 测试用例不通过
                 continue
             }
             print("🦠\(i)年是 ? 闰年 = \(isleap)")

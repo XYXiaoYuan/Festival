@@ -50,7 +50,6 @@ class FestivalTests: XCTestCase {
         print(solars)
         print(lunars + solars)
     }
-    
 }
 
 extension String {
