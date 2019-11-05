@@ -85,7 +85,7 @@ extension Festival {
             // 清明节处理
             let solarterm = Solarterms.solartermName(index: Solarterms.solartermIndex(year: year, month: month, day: day))
             if solarterm == "清明" {
-                festivalStr = FesEnum.Lunar.qingming.rawValue
+                festivalStr = FesEnum.Solar.qingming.rawValue
             }
             return festivalStr
         }
