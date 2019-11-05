@@ -8,9 +8,14 @@
 
 import Foundation
 
+enum FestivalType {
+    case system
+    case custom
+}
+
 class Festival {
     /// 节日
-    private static func festivalIndex(_ month: Int, _ day: Int) -> Int {
+    static func festivalIndex(_ month: Int, _ day: Int) -> Int {
         return month * 100 + day
     }
     
@@ -22,7 +27,7 @@ class Festival {
             let month = components.month,
             let day = components.day else { return [String]() }
 
-        var allFestivals: [String] = [String]()
+        var allFestival: [String] = [String]()
                 
         // ①阴历节日
         let solor = Solar(solarYear: year, solarMonth: month, solarDay: day)
@@ -30,24 +35,24 @@ class Festival {
         let lunarFestivals = lunarFestival(year: lunarDate.lunarYear, month: lunarDate.lunarMonth, day: lunarDate.lunarDay)
 
         if lunarFestivals.count > 0 {
-            allFestivals.append(lunarFestivals)
+            allFestival.append(lunarFestivals)
         } else {
             // 除夕特殊处理
             let festival = dealLunarNewYearsEve(lunarDate: lunarDate, date: date)
             if festival.count > 0 {
-                allFestivals.append(festival)
+                allFestival.append(festival)
             }
         }
 
         // ②阳历节日
         let soloarFestivals = soloarFestival(year: year, month: month, day: day)
         if soloarFestivals.count > 0 {
-            allFestivals.append(soloarFestivals)
+            allFestival.append(soloarFestivals)
         } else {
             // 处理父亲节和母亲节
             let festival = dealMothersDayAndFathersDay(month: month, components: components)
             if festival.count > 0 {
-                allFestivals.append(festival)
+                allFestival.append(festival)
             }
         }
         
@@ -56,7 +61,7 @@ class Festival {
 //            allFestival.append(customFes)
 //        }
 
-        return allFestivals
+        return allFestival
     }
 }
 
@@ -146,13 +151,13 @@ extension Festival {
         var festival = ""
         if 12 == lunarDate.lunarMonth && (30 == lunarDate.lunarDay || 29 == lunarDate.lunarDay) {
             if 30 == lunarDate.lunarDay {
-                festival = FesEnum.Lunar.newYearsEve.rawValue // FesEnum.Lunar.chineseNewYear.rawValue
+                festival = FesEnum.Lunar.newYearsEve.rawValue
             } else {
                 let timeIntervalDay: TimeInterval = 60 * 60 * 24
                 let nextDayDate = Date(timeInterval: timeIntervalDay, since: date)
                 let lunarComponents = Calendar(identifier: .chinese).dateComponents([.day, .month, .year], from: nextDayDate)
                 if 1 == lunarComponents.month && 1 == lunarComponents.day {
-                    festival = FesEnum.Lunar.newYearsEve.rawValue // FesEnum.Lunar.chineseNewYear.rawValue
+                    festival = FesEnum.Lunar.newYearsEve.rawValue
                 }
             }
         }
