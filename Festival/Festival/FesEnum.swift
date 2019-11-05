@@ -54,31 +54,27 @@ enum FesEnum {
             ]
         }
     }
-    
-    private static func festivalDate(month: Int, day: Int) -> String {
-        return String(format: "%02d-%02d", month, day)
-    }
 }
 
 // MARK: - 阴历节日
 extension FesEnum.Lunar {
-    var date: [String] {
+    var date: [Int] {
         switch self {
         case .chineseNewYear:
-            return [FesEnum.festivalDate(month: 12, day: 30)]
+            return [Festival.festivalIndex(12, 30)]
         case .newYearsEve:
-            var newYearsEve = [String]()
+            var newYearsEve = [Int]()
             for i in 1...6 {
-                let nation = FesEnum.festivalDate(month: 1, day: i)
+                let nation = Festival.festivalIndex(1, i)
                 newYearsEve.append(nation)
             }
             return newYearsEve
         case .dragonBoat:
-            return [FesEnum.festivalDate(month: 5, day: 5)]
+            return [Festival.festivalIndex(5, 5)]
         case .qixi:
-            return [FesEnum.festivalDate(month: 7, day: 7)]
+            return [Festival.festivalIndex(7, 7)]
         case .midAutumn:
-            return [FesEnum.festivalDate(month: 8, day: 15)]
+            return [Festival.festivalIndex(8, 15)]
         }
     }
     
@@ -97,30 +93,30 @@ extension FesEnum.Lunar {
 // MARK: - 阳历节日
 extension FesEnum.Solar {
     /// 其它节日的日期数组
-    var date: [String] {
+    var date: [Int] {
         switch self {
         case .newYearsDay:
-            return [FesEnum.festivalDate(month: 1, day: 1)]
+            return [Festival.festivalIndex(1, 1)]
         case .qingming:
             // TODO:特殊处理
-            return [FesEnum.festivalDate(month: 4, day: 5)]
+            return [Festival.festivalIndex(4, 5)]
         case .womensDay:
-            return [FesEnum.festivalDate(month: 3, day: 8)]
+            return [Festival.festivalIndex(3, 8)]
         case .labourDay:
-            return [FesEnum.festivalDate(month: 5, day: 1)]
+            return [Festival.festivalIndex(5, 1)]
         case .childrensDay:
-            return [FesEnum.festivalDate(month: 6, day: 1)]
+            return [Festival.festivalIndex(6, 1)]
         case .nationalDay:
-            var nationals = [String]()
+            var nationals = [Int]()
             for i in 1...7 {
-                let nation = FesEnum.festivalDate(month: 10, day: i)
+                let nation = Festival.festivalIndex(10,  i)
                 nationals.append(nation)
             }
             return nationals
         case .monthersDay:
-            return [FesEnum.festivalDate(month: 5, day: 12)]
+            return [Festival.festivalIndex(5, 12)]
         case .fathersDay:
-            return [FesEnum.festivalDate(month: 6, day: 16)]
+            return [Festival.festivalIndex(6, 16)]
         }
     }
     
@@ -150,3 +146,4 @@ extension FesEnum.Solar {
         }
     }
 }
+

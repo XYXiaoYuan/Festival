@@ -27,33 +27,10 @@ class LunarFestival: XCTestCase {
         
         // 中秋节
         MidAutumnFestival().testMidAutumnFestival()
-        
-        // 固定日期的农历节日测试
-        testAfterConvertLunarFestival()
     }
 
     static var allTests = [
         "testLunarFestival": testLunarFestival
     ]
     
-    func testAfterConvertLunarFestival() {
-        // 端午节
-        for i in 1900...2019 {
-            let f = Festival.lunarFestival(year: i, month: 5, day: 5)
-            XCTAssert(f.contains("端午节"))
-        }
-        
-        // 七夕节
-        for i in 1900...2019 {
-            let f = Festival.lunarFestival(year: i, month: 7, day: 7)
-            XCTAssert(f.contains("七夕节"))
-        }
-        
-        // 中秋节
-        for i in 1900...2019 {
-            let f = Festival.lunarFestival(year: i, month: 8, day: 15)
-            XCTAssert(f.contains("中秋节"))
-        }
-    }
-
 }
