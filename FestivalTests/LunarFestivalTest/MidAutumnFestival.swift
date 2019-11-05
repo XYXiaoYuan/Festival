@@ -16,16 +16,18 @@ class MidAutumnFestival: XCTestCase {
     func testMidAutumnFestival() {
         
         var dates: [Solar] = [Solar]()
-        for i in 1990...2019 {
+        for i in 1900...2019 {
             let isleap = LunarSolarConverter.isLeapYear(year: i)
             if isleap {
                 // TODO:闰年的 阴历转阳历 测试用例不通过
-                continue
+//                continue
             }
-            print("🦠\(i)年是 ? 闰年 = \(isleap)")
+//            print("🦠\(i)年是 ? 闰年 = \(isleap)")
             let lunar = Lunar(isleap: isleap, lunarYear: i, lunarMonth: 8, lunarDay: 15)
             let solor = LunarSolarConverter.lunarToSolar(lunar: lunar)
-            print("阴历🧤\(lunar)转换成 阳历是✳️\(solor)")
+            if isleap {
+                print("闰年 阴历🧤\(lunar)转换成 阳历是✳️\(solor)")
+            }
             dates.append(solor)
         }
         

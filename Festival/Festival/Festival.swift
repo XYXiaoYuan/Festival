@@ -57,7 +57,7 @@ class Festival {
         }
         
         // ③自定义节日
-//        if let customFes = customFestival(year: year, month: month, day: day), customFes != "" {
+//        if let customFes = customFestival(month: month, day: day), customFes != "" {
 //            allFestival.append(customFes)
 //        }
 
@@ -105,13 +105,13 @@ extension Festival {
     }
     
     /// 自定义节日
-//    static func customFestival(year: Int, month: Int, day: Int) -> String? {
+//    static func customFestival(month: Int, day: Int) -> String? {
 //        guard let festivalList = BSCenter.defautCenter.festivalList else { return nil }
 //
 //        var customFes: String = ""
 //        for f in festivalList {
 //            if let components = f.customFestivalDate() {
-//                if components.year == year, components.month == month, components.day == day {
+//                if components.month == month, components.day == day {
 //                    if let name = f.name {
 //                        customFes = name
 //                        break
