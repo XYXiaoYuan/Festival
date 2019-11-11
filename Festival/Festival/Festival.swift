@@ -119,13 +119,12 @@ extension Festival {
     
     /// 自定义节日
 //    static func customFestival(solarMonthDay: Int) -> String? {
-//        guard let festivalList = BSCenter.defautCenter.festivalList else { return nil }
+//        guard let festivalList = BSCenter.defautCenter.getAllCustomFestivalList() else { return nil }
 //
 //        var customFes: String?
 //        for f in festivalList {
-//            if let components = f.customFestivalDate() {
-//                let date = Festival.festivalIndex(components.month, components.day)
-//                if date == solarMonthDay {
+//            if let cusMonthDay = f.customFestivalDate() {
+//                if cusMonthDay == solarMonthDay {
 //                    if let name = f.name {
 //                        customFes = name
 //                        continue

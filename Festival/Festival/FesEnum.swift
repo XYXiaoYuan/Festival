@@ -98,7 +98,6 @@ extension FesEnum.Solar {
         case .newYearsDay:
             return [Festival.festivalIndex(1, 1)]
         case .qingming:
-            // TODO:特殊处理
             return [Festival.festivalIndex(4, 5)]
         case .womensDay:
             return [Festival.festivalIndex(3, 8)]
