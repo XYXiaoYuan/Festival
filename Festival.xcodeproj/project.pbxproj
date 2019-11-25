@@ -29,6 +29,7 @@
 		A7622E9E235889A500D10508 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E8423585A1300D10508 /* Date-Extension.swift */; };
 		A7622EA02358924200D10508 /* MothersDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622E9F2358924200D10508 /* MothersDay.swift */; };
 		A7622EA22358925300D10508 /* FathersDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7622EA12358925300D10508 /* FathersDay.swift */; };
+		A7EC255B238B6454000DB872 /* FestivalComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC255A238B6454000DB872 /* FestivalComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		A7622E9B23587D8A00D10508 /* DragonBoatFestival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBoatFestival.swift; sourceTree = "<group>"; };
 		A7622E9F2358924200D10508 /* MothersDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothersDay.swift; sourceTree = "<group>"; };
 		A7622EA12358925300D10508 /* FathersDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FathersDay.swift; sourceTree = "<group>"; };
+		A7EC255A238B6454000DB872 /* FestivalComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				A70803FC236A7AEA00E059A0 /* FesEnum.swift */,
 				A72EC1D52357FE5B000B8E86 /* Festival.swift */,
 				A72EC1D72357FE5B000B8E86 /* Solarterms.swift */,
+				A7EC255A238B6454000DB872 /* FestivalComponents.swift */,
 				A72EC1E123584CE9000B8E86 /* LunarSolarConverter.swift */,
 			);
 			path = Festival;
@@ -270,6 +273,7 @@
 				A7622E9E235889A500D10508 /* Date-Extension.swift in Sources */,
 				A72EC1A62357FE35000B8E86 /* AppDelegate.swift in Sources */,
 				A72EC1DA2357FE5B000B8E86 /* Solarterms.swift in Sources */,
+				A7EC255B238B6454000DB872 /* FestivalComponents.swift in Sources */,
 				A70803FD236A7AEA00E059A0 /* FesEnum.swift in Sources */,
 				A72EC1A82357FE35000B8E86 /* SceneDelegate.swift in Sources */,
 				A72EC1D82357FE5B000B8E86 /* Festival.swift in Sources */,
