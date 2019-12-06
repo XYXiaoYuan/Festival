@@ -16,8 +16,12 @@ class SoloarFestival: XCTestCase {
         for i in 1900...2019 {
             let date = Date.date(year: i, month: 1, day: 1)
             if let date = date {
-                let f = Festival.festival(date: date)
-                XCTAssert(f.contains("元旦"))
+                let components = FestivalComponents.createComponents(date: date)
+                if let components = components {
+                    if let f: [String] = components.matchSolars(FesEnum.Solar.allSolorsFes, matchType: .names) {
+                        XCTAssert(f.contains("元旦"))
+                    }
+                }
             }
         }
         
@@ -32,8 +36,12 @@ class SoloarFestival: XCTestCase {
         for i in 1900...2019 {
             let date = Date.date(year: i, month: 3, day: 8)
             if let date = date {
-                let f = Festival.festival(date: date)
-                XCTAssert(f.contains("妇女节"))
+                let components = FestivalComponents.createComponents(date: date)
+                if let components = components {
+                    if let f: [String] = components.matchSolars(FesEnum.Solar.allSolorsFes, matchType: .names) {
+                        XCTAssert(f.contains("妇女节"))
+                    }
+                }
             }
         }
         
@@ -56,8 +64,12 @@ class SoloarFestival: XCTestCase {
         for i in 1900...2019 {
             let date = Date.date(year: i, month: 6, day: 1)
             if let date = date {
-                let f = Festival.festival(date: date)
-                XCTAssert(f.contains("儿童节"))
+                let components = FestivalComponents.createComponents(date: date)
+                if let components = components {
+                    if let f: [String] = components.matchSolars(FesEnum.Solar.allSolorsFes, matchType: .names) {
+                        XCTAssert(f.contains("儿童节"))
+                    }
+                }
             }
         }
         
@@ -81,8 +93,12 @@ class SoloarFestival: XCTestCase {
             for day in 1...7 {
                 let date = Date.date(year: i, month: 10, day: day)
                 if let date = date {
-                    let f = Festival.festival(date: date)
-                    XCTAssert(f.contains("国庆节"))
+                    let components = FestivalComponents.createComponents(date: date)
+                    if let components = components {
+                        if let f: [String] = components.matchSolars(FesEnum.Solar.allSolorsFes, matchType: .names) {
+                            XCTAssert(f.contains("国庆节"))
+                        }
+                    }
                 }
             }
         }

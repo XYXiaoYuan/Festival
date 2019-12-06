@@ -9,17 +9,17 @@
 import Foundation
 
 /// 节日枚举
-enum FesEnum {
+public enum FesEnum {
     
     /// 阴历节日
-    enum Lunar: String, CaseIterable {
-        case chineseNewYear = "除夕" // 除夕名字统一为春节
+    public enum Lunar: String, CaseIterable {
+        case chineseNewYear = "春节除夕" // 除夕名字统一为春节
         case newYearsEve    = "春节"
         case dragonBoat     = "端午节"
         case qixi           = "七夕节"
         case midAutumn      = "中秋节"
         
-        static var allLunarFes: [Lunar] {
+        public static var allLunarFes: [Lunar] {
             return [
             .chineseNewYear,
             .newYearsEve,
@@ -31,7 +31,7 @@ enum FesEnum {
     }
     
     /// 阳历节日
-    enum Solar: String, CaseIterable {
+    public enum Solar: String, CaseIterable {
         case newYearsDay    = "元旦"
         case qingming       = "清明节"
         case womensDay      = "妇女节"
@@ -41,7 +41,7 @@ enum FesEnum {
         case fathersDay     = "父亲节"
         case nationalDay    = "国庆节"
         
-        static var allSolorsFes: [Solar] {
+        public static var allSolorsFes: [Solar] {
             return [
             .newYearsDay,
             .qingming,
@@ -61,20 +61,20 @@ extension FesEnum.Lunar {
     var date: [Int] {
         switch self {
         case .chineseNewYear:
-            return [Festival.festivalIndex(12, 30)]
+            return [FestivalIndex.festivalIndex(12, 30)]
         case .newYearsEve:
             var newYearsEve = [Int]()
             for i in 1...6 {
-                let nation = Festival.festivalIndex(1, i)
+                let nation = FestivalIndex.festivalIndex(1, i)
                 newYearsEve.append(nation)
             }
             return newYearsEve
         case .dragonBoat:
-            return [Festival.festivalIndex(5, 5)]
+            return [FestivalIndex.festivalIndex(5, 5)]
         case .qixi:
-            return [Festival.festivalIndex(7, 7)]
+            return [FestivalIndex.festivalIndex(7, 7)]
         case .midAutumn:
-            return [Festival.festivalIndex(8, 15)]
+            return [FestivalIndex.festivalIndex(8, 15)]
         }
     }
     
@@ -96,26 +96,26 @@ extension FesEnum.Solar {
     var date: [Int] {
         switch self {
         case .newYearsDay:
-            return [Festival.festivalIndex(1, 1)]
+            return [FestivalIndex.festivalIndex(1, 1)]
         case .qingming:
-            return [Festival.festivalIndex(4, 5)]
+            return [FestivalIndex.festivalIndex(4, 5)]
         case .womensDay:
-            return [Festival.festivalIndex(3, 8)]
+            return [FestivalIndex.festivalIndex(3, 8)]
         case .labourDay:
-            return [Festival.festivalIndex(5, 1)]
+            return [FestivalIndex.festivalIndex(5, 1)]
         case .childrensDay:
-            return [Festival.festivalIndex(6, 1)]
+            return [FestivalIndex.festivalIndex(6, 1)]
         case .nationalDay:
             var nationals = [Int]()
             for i in 1...7 {
-                let nation = Festival.festivalIndex(10,  i)
+                let nation = FestivalIndex.festivalIndex(10,  i)
                 nationals.append(nation)
             }
             return nationals
         case .monthersDay:
-            return [Festival.festivalIndex(5, 12)]
+            return [FestivalIndex.festivalIndex(5, 12)]
         case .fathersDay:
-            return [Festival.festivalIndex(6, 16)]
+            return [FestivalIndex.festivalIndex(6, 16)]
         }
     }
     

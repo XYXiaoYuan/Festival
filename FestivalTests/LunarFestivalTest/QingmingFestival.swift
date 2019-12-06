@@ -39,8 +39,12 @@ class QingmingFestival: XCTestCase {
         for solar in dates {
             let date = Date.date(year: solar.solarYear, month: solar.solarMonth, day: solar.solarDay)
             if let date = date {
-                let f = Festival.festival(date: date)
-                XCTAssert(f.contains("清明节"))
+                let components = FestivalComponents.createComponents(date: date)
+                if let components = components {
+                    if let f: [String] = components.matchLunars(FesEnum.Lunar.allLunarFes, matchType: MatchType.names) {
+                        XCTAssert(f.contains("清明节"))
+                    }
+                }
             }
         }
     }
