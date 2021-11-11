@@ -15,6 +15,8 @@ class QingmingFestival: XCTestCase {
     // MARK: - 清明节
     func testQingmingFestival() {
         let dates = [
+            Solar(solarYear: 2021, solarMonth: 4, solarDay: 4),
+            Solar(solarYear: 2020, solarMonth: 4, solarDay: 4),
             Solar(solarYear: 2019, solarMonth: 4, solarDay: 5),
             Solar(solarYear: 2018, solarMonth: 4, solarDay: 5),
             Solar(solarYear: 2017, solarMonth: 4, solarDay: 4),

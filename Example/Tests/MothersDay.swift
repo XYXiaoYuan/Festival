@@ -16,6 +16,7 @@ class MothersDay: XCTestCase {
     func testMothersDay() {
         
         let dates = [
+            Solar(solarYear: 2020, solarMonth: 5, solarDay: 9),
             Solar(solarYear: 2020, solarMonth: 5, solarDay: 10),
             Solar(solarYear: 2019, solarMonth: 5, solarDay: 12),
             Solar(solarYear: 2018, solarMonth: 5, solarDay: 13),

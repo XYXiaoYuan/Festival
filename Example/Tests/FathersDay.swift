@@ -16,6 +16,7 @@ class FathersDay: XCTestCase {
     func testFathersDay() {
         
         let dates = [
+            Solar(solarYear: 2021, solarMonth: 6, solarDay: 20),
             Solar(solarYear: 2020, solarMonth: 6, solarDay: 21),
             Solar(solarYear: 2019, solarMonth: 6, solarDay: 16),
             Solar(solarYear: 2018, solarMonth: 6, solarDay: 17),
