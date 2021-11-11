@@ -1,0 +1,6 @@
+framework module Festival {
+  umbrella header "Festival-umbrella.h"
+
+  export *
+  module * { export * }
+}

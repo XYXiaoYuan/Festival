@@ -1,0 +1,16 @@
+PODS:
+  - Festival (0.0.1)
+
+DEPENDENCIES:
+  - Festival (from `../`)
+
+EXTERNAL SOURCES:
+  Festival:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Festival: 6989cab3be8936fd13f2bef0aba672d1e2a409ca
+
+PODFILE CHECKSUM: 7f7c67717786ca4b646051b1adf5c34d7ee4cf51
+
+COCOAPODS: 1.10.0
